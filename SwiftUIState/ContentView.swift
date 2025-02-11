@@ -19,6 +19,7 @@ struct ContentView: View {
           ProgressbarView()
           StepperView()
           GroupBoxView()
+          ModelView()
         }
         .padding()
       }
@@ -27,4 +28,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+    .environment(ApplicationData.shared)
 }
