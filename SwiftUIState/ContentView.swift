@@ -18,6 +18,7 @@ struct ContentView: View {
           SlideView()
           ProgressbarView()
           StepperView()
+          GroupBoxView()
         }
         .padding()
       }
