@@ -12,24 +12,20 @@ struct StateHook: View {
   @State private var title = "Hello, World!"
   @State private var titleInput = ""
   
+  
     var body: some View {
       VStack {
-        Text(title)
-          .padding()
-        
         Text("isValid: \(isValid ? "true" : "false")")
           .padding()
-        
-        TextField("Input Title", text: $titleInput)
-          .textFieldStyle(.roundedBorder)
-        
+                
+        BindingState(title: $title, titleInput: $titleInput)
         Button {
           title = titleInput
           titleInput = ""
         } label: {
           Text("Change Title")
         }
-        
+
         Button {
           isValid.toggle()
         } label: {
