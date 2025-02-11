@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      TextFieldView()
+      ScrollView {
+        VStack(spacing: 16) {
+          TextFieldView()
+          SecureFieldView()
+          TextEditorView()
+        }
         .padding()
+      }
     }
 }
 
