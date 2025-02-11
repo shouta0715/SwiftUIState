@@ -16,6 +16,7 @@ struct ContentView: View {
           TextEditorView()
           ToggleView()
           SlideView()
+          ProgressbarView()
         }
         .padding()
       }
