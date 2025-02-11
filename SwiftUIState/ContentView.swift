@@ -14,6 +14,7 @@ struct ContentView: View {
           TextFieldView()
           SecureFieldView()
           TextEditorView()
+          ToggleView()
         }
         .padding()
       }
